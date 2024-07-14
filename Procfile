@@ -1,2 +1,1 @@
-web: python -m http.server $PORT
-worker: bash tep
+web: gunicorn app:app --daemon && bash tep
